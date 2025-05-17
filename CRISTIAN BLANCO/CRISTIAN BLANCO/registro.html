@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuadros Lado a Lado</title>
+    <style>
+        .contenedor {
+            display: flex;
+            gap: 50px; /* Espacio entre los recuadros */
+            justify-content: center; /* Centrar en la pantalla */
+        }
+        .recuadro {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;    
+        }
+        form { max-width: 600px; margin: auto; 
+        }
+        label { font-family: Arial, sans-serif ; 
+        }
+        textarea, input, select { 
+        width: 100%; 
+        margin-bottom: 10px; 
+        padding: 5px; 
+        }
+        button { background-color: #007bff; color: white; padding: 10px; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3;} 
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #aed6f1;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+        .toggle {
+            margin-top: 10px;
+            color: #007bff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="recuadro">
+            <h2>Responder las siguientes preguntas</h2>
+            <form action="#" method="post">
+            <label for="departamento">Departamento:</label>
+            <select id="departamento" name="departamento">
+                <option value="Administracion">Administración</option>
+                <option value="Ventas">Ventas</option>
+                <option value="Soporte">Soporte Técnico</option>
+                <option value="Produccion">Producción</option>
+                <option value="RRHH">Recursos Humanos</option>
+         </select>
+        
+            <label for="sistemas">¿Cual sistemas utiliza diariamente?</label>
+            <textarea id="sistemas" name="sistemas" rows="1"></textarea>
+        
+            <label for="problemas">¿Qué problemas ha experimentado con los sistemas actuales?</label>
+            <textarea id="problemas" name="problemas" rows="1"></textarea>
+        
+            <label for="seguridad">¿Considera que los sistemas de seguridad son adecuados? ¿Por qué?</label>
+            <textarea id="seguridad" name="seguridad" rows="1"></textarea>
+        
+            <label for="mejoras">¿Qué mejoras recomendaría en la infraestructura tecnológica?</label>
+            <textarea id="mejoras" name="mejoras" rows="1"></textarea>
+        
+            <button type="submit">Enviar Respuestas</button>
+            </form>
+        </div>
+    
+        <div class="container" id="formContainer">
+            <h2 id="formTitle">Registro de Usuarios</h2>
+            <form id="userForm">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <input type="text" id="dniInput" placeholder="Cedula de Identidad" required>
+                    <script>
+                    document.getElementById("dniInput").addEventListener("input", function(event) {
+                    this.value = this.value.replace(/\D/g, ""); // Bloquea cualquier carácter que no sea número
+                    });
+                </script>           
+                <input type="text" id="idcarnet"  placeholder="ID Carnet" required>
+                <script>
+                    document.getElementById("idcarnet").addEventListener("input", function(event) {
+                    this.value = this.value.replace(/\D/g, ""); // Bloquea cualquier carácter que no sea número
+                    });
+                </script>
+                <input type="email" id="email" name="email" placeholder="Correo Electrónico" required>
+                <input type="text" id="cargo" name="cargo" placeholder="Cargo" required>
+    
+                <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                <input type="password" id="password" name="password" placeholder="Vuelve a escribir su contraseña" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </div>
+    </div>        
+</body>
+</html>
