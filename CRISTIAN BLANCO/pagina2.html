@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificación de Auditoría</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #aed6f1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1px 0;
+            text-align: center;
+            margin: 15px;
+            border-radius: 10px;
+        } 
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            border: 1px solid #000;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        .contain {
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            border: 1px solid #000;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: white;
+        }
+        label {
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: center;
+            background-color: white;
+        }
+        th {
+            background-color: lightgray;
+        }
+        .rating-container {
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            display: flex;
+            gap: 80px;
+        }
+        .rating-label {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 1px 0;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .boton.contenedor{
+            display:flex;
+            justify-self: left;
+        }
+        .boton{
+            background-color: #aed6f1;
+            color: black;
+            padding: 5px 15px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 5px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Auditoria de sistemas</h1>
+    </header>
+    <div class="container">
+        <center><label>Empresa Venezolana de servicos tegnologicos c.a </label></center>
+
+        <table>
+            <tr>
+                <th>Sistema a auditar</th>
+                <th>Usuarios</th>
+                <th>Hardware</th>
+                <th>Tiempo</th>
+                <th>Pruebas</th>
+                <th>Planes</th>
+                <th>Observaciones</th>
+            </tr>
+            <tr>
+                <td> Saint Enterprise (Sistema Contable)</td>
+                <td>Contabilidad Contadores / Gerente General Dirección</td>
+                <td>Computadora de escritorio (1) / Laptop (1)</td>
+                <td>Semana 1: Planificación y revisión documental</td>
+                <td> Estudio de la empresa: Entrevistas estructuradas, Observación directa, revisión documental</td>
+                <td>Plan de seguridad (Para evaluar y mejorar la seguridad)</td>
+                <td>Identificar los riesgos de seguridad</td>
+            </tr>
+            <tr>
+                <td>Profit Plus (Sistema de nómina)</td>
+                <td>Recursos Humanos</td>
+                <td>Computadoras de escritorio (8)</td>
+                <td>Semana 2: Recolección de información</td>
+                <td>Prueba de consentimiento: Consentimiento informado, Acuerdo de confidencialidad, Validación de la alta dirección</td>
+                <td>Plan de recursos (Para optimizar los recursos y definir cambios estratégicos).</td>
+                <td>Optimizar los recursos</td>
+            </tr>
+            <tr>
+                <td>CRM (Vtiger CRM)</td>
+                <td>Ventas Vendedores / Gerente general Dirección</td>
+                <td>Laptops (2)</td>
+                <td>Semana 3: Pruebas técnicas y evaluación de seguridad</td>
+                <td>Prueba de control interno: Evaluación de controles manuales, Detección de debilidades</td>
+                <td></td>
+                <td>Mejorar los procesos internos.</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Semana 4: Análisis de estados y generación de informe</td>
+                <td>Pruebas sustantivas: Comparación de datos históricos, Simulación de casos reales</td>
+                <td></td>
+                <td>Cumplir las normativas. </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Semana 5: Presentación de resultados</td>
+                <td></td>
+                <td></td>
+                <td></td>
+  
+            </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+    <div class="contain">
+        <center><label>Evaluación del Sistema</label></center>
+        <table>
+            <tr>
+                <th></th>
+                <th>Caracteristicas</th>
+                <th>Soporte</th>
+                <th>Compatibilidad</th>
+                <th>Base</th>
+                <th>Registro</th>
+                <th>Reporte</th>
+                <th>Seguridad</th>
+                <th>Comportamiento</th>
+            </tr>
+            <tr>
+                <td> Saint Enterprise</td>
+                <td>Sistema administrativo integral para pequeñas y medianas empresas. Permite gestionar ventas, compras, inventarios, cuentas por cobrar, cuentas por pagar, bancos y contabilidad básica.</td>
+                <td>Personal administrativo, contadores y encargados de inventarios</td>
+                <td>Sistemas Windows (7, 8, 10 y 11). O hojas de cálculo (Excel) </td>
+                <td>Firebird</td>
+                <td>Decenas de miles de registros, (dependiendo de la capacidad del hardware y el mantenimiento de la base de datos)</td>
+                <td>Reportes de Venta y compras, Inventarios, Estados de cuenta de clientes y proveedores, Flujo de caja </td>
+                <td>Seguridad a nivel de base de datos Firebird</td>
+                <td>Gestión de clientes y proveedores. Registro de facturas y notas de crédito.Registro de pagos y cobros.Reportes y cierre de períodos. </td>
+            </tr>
+            <tr>
+                <td>Profit Plus </td>
+                <td>Sistema administrativo modular que permite gestionar inventarios, compras, ventas, nómina y contabilidad</td>
+                <td>Administradores, contadores, personal de inventario, cajeros y gerentes</td>
+                <td>Windows,otros softwares mediante importación/exportación de datos </td>
+                <td>Microsoft SQL Server</td>
+                <td>Miles de registros, siempre que el hardware y el SQL Server estén bien configurados </td>
+                <td>Reportes de Venta y compras, Inventarios Estados de cuenta de clientes y proveedores </td>
+                <td>Políticas del SQL Server  </td>
+                <td>Integración con la contabilidad. Generación de reportes y consultas gerenciales</td>
+            </tr>
+            <tr>
+                <td>Vtiger CRM</td>
+                <td>Sistema CRM completo de código abierto que permite gestionar clientes, ventas, marketing, soporte técnico, proyectos y automatización de procesos.</td>
+                <td>Áreas de ventas, atención al cliente, marketing y gerencia. </td>
+                <td>Otros sistemas mediante API REST, Web Services Puede integrarse con plataformas como Outlook, Gmail, WhatsApp.</td>
+                <td>MySQL o MariaDB</td>
+                <td>Ilimitado de clientes, contactos, tickets, siempre que la infraestructura del servidor lo soporte correctamente.</td>
+                <td>Reportes de seguimiento de clientes, campañas de marketing, atención al cliente</td>
+                <td>Encriptación de datos en tránsito (SSL).</td>
+                <td>Registro y gestión de clientes y contactos, Seguimiento de oportunidades y ventas, Gestión de tickets y soporte al cliente</td>
+            </tr>
+        </table>
+    </div>
+    <div class="rating-container">
+        <label class="rating-label"><input type="checkbox" name="rating" value="Deficiente"> Deficiente</label>
+        <label class="rating-label"><input type="checkbox" name="rating" value="Regular"> Regular</label>
+        <label class="rating-label"><input type="checkbox" name="rating" value="Bueno"> Bueno</label>
+        <label class="rating-label"><input type="checkbox" name="rating" value="Muy_bueno"> Muy Bueno</label>
+        <label class="rating-label"><input type="checkbox" name="rating" value="Excelente"> Excelente</label>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+ <footer>
+        <p>&copy; Practica de HTML - CSS electiva y auditoria de sistemas / cristianjblanco20@gmail.com
+        </p>
+    </footer>
+</body>
+</html>
